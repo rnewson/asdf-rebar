@@ -37,6 +37,7 @@ install_rebar() {
             fi
 
             cp $rebar3_binary $install_path/bin/ || exit 1
+            cp $rebar3_binary $install_path/bin/rebar || exit 1
         else
             cp rebar $install_path/bin/ || exit 1
         fi
